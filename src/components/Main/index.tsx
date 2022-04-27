@@ -1,4 +1,5 @@
 import React from 'react';
+import ProfilePage from '../ProfilePage';
 
 import {
   Container,
@@ -21,10 +22,10 @@ const Main: React.FC = () => {
         </button>
         <ProfileInfo>
           <strong>ɢᴜɪʟʜᴇʀᴍᴇ,</strong>
-          <span>777 tweets</span>
+          <span>999 tweets</span>
         </ProfileInfo>
       </Header>
-      {/* <ProfilePage /> */}
+      <ProfilePage />
       <BottomMenu>
         <button>
           <HomeIcon />
