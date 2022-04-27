@@ -21,7 +21,8 @@ export const Banner = styled.div`
   background-color: var(--twitter);
   position: relative;
   &:hover{
-    cursor: pointer;
+    /* filter: brightness(85%); */
+    /* cursor: pointer; */
   }
 `;
 
@@ -34,6 +35,10 @@ export const Avatar = styled.div`
   position: absolute;
   bottom: max(-60px, -10vw);
   left: 15px;
+  &:hover{
+    /* filter: brightness(85%); */
+    /* cursor: pointer; */
+  }
 `;
 
 export const ProfileData = styled.div`
@@ -119,7 +124,7 @@ export const EditButton = styled(Button)`
   padding: 4px 16px;
   font-size: 13px;
 
-  @media(min-width: 320px){
+  @media(min-width: 340px){
     top: 10px;
     padding: 10px 19px;
     font-size: 15px;
