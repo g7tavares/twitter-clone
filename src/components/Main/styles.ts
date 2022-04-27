@@ -60,7 +60,7 @@ export const ProfileInfo = styled.div`
 
   > span {
     font-size: 15px;
-    color: var(--white);
+    color: var(--gray);
   }
 `;
 

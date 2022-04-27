@@ -1,5 +1,6 @@
 import styled, {css} from 'styled-components';
 import {LocationOn, Balloon, CalendarLtr} from '../../styles/Icons'
+import Button from '../Button/index'
 
 export const Container = styled.div`
   display: flex;
@@ -19,6 +20,9 @@ export const Banner = styled.div`
   height: min(33vw, 199px);
   background-color: var(--twitter);
   position: relative;
+  &:hover{
+    cursor: pointer;
+  }
 `;
 
 export const Avatar = styled.div`
@@ -49,17 +53,32 @@ export const ProfileData = styled.div`
     color: var(--gray)
   }
 
-  >li{
-    color: var(--gray);
+  >p{
+    font-size: 15px;
+    margin-top: 11px;
   }
+
+  >ul{
+    list-style: none;
+    margin: 10px 0;
+    >li{
+      display: flex;
+      align-items: center;
+      color: var(--gray);
+      font-size:15px;
+      >svg{
+        fill: var(--gray);
+        margin-right: 5px;
+      }
+    }
+  }
+
 `;
 
 
 const IconCSS = css`
   width: 20px;
   height: 20px;
-  fill: var(--gray);
-
 `
 export const LocationIcon = styled(LocationOn)`
   ${IconCSS}
@@ -74,5 +93,35 @@ export const CalendarIcon = styled(CalendarLtr)`
 `;
 
 export const Followage = styled.div`
+  display: flex;
+  >span{
+    font-size: 15px;
+    color: var(--gray);
+    cursor: default;
 
+    &:hover{
+      text-decoration: underline white;
+      cursor: pointer;
+
+    }
+    &:nth-child(1){
+      margin-right: 20px;
+    }
+  }
+
+`;
+
+export const EditButton = styled(Button)`
+  position: absolute;
+  top: 2vw;
+  right: 7px;
+
+  padding: 4px 16px;
+  font-size: 13px;
+
+  @media(min-width: 320px){
+    top: 10px;
+    padding: 10px 19px;
+    font-size: 15px;
+  }
 `;
