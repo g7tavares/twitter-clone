@@ -6,8 +6,8 @@ interface Props{
 
 export default styled.button<Props>`
   background: ${props => (props.outlined ? 'trasnsparent' : 'var(--twitter)')};
-  color: ${props => (props.outlined ? 'var(--twitter)' : 'var(--white)')};
-  border: ${props => (props.outlined ? '1px solid var(--twitter)' : 'none')};
+  color: ${props => (props.outlined ? 'var(--white)' : 'var(--white)')};
+  border: ${props => (props.outlined ? '1px solid var(--white)' : 'none')};
   padding: 16px;
   border-radius: 25px;
   font-weight: bold;

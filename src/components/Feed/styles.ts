@@ -22,6 +22,7 @@ export const Tab = styled.div`
   color: var(--gray);
   transition: background 0.2s ease-in-out;
   text-overflow: ellipsis;
+  border-bottom: 1px solid var(--outline);
 
   @media (max-width: 420px) {
     font-size: 12px;
