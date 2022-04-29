@@ -15,6 +15,7 @@ export default createGlobalStyle`
   --twitter-dark-hover: #011017;
   --twitter-light-hover: #2C8ED6;
   --button-hover: #191919;
+  --tweet-hover: #080808;
 }
 
 *{
